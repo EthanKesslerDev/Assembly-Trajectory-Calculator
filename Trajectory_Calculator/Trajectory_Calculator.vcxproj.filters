@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="Test.asm">
+    <MASM Include="Projectile_Calculator.asm">
       <Filter>Source Files</Filter>
     </MASM>
   </ItemGroup>
