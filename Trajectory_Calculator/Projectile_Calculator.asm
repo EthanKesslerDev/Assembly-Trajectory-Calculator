@@ -26,17 +26,21 @@ main PROC
 	finit
 
 	;	Get Inputs
-	mWrite	"Enter inital horizontal velocity: "
+	mWrite	"Enter inital horizontal velocity [FLOAT]: "
 	call	ReadFloat
 	fst	ux
 
-	mWrite	"Enter initial vertical velocity: "
+	mWrite	"Enter initial vertical velocity [FLOAT]: "
 	call	ReadFloat
 	fst	uy
 
-	mWrite	"Enter total tracking time: "
+	mWrite	"Enter total tracking time [FLOAT]: "
 	call	ReadFloat
 	fst	t_total
+
+	mWrite	"Enter start time [FLOAT]: "
+	call	ReadFloat
+	fst	t
 
 	call Crlf
 
@@ -56,8 +60,11 @@ Loop_Main:
 	call Crlf
 	call Crlf
 
+	mWrite	"__________________________________________"
+	call Crlf
+
 	finit ;	clean up FPU (This is probably not a great idea)
-	call DumpRegs
+	;	call DumpRegs
 
 
 	;	display time (t)
