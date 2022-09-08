@@ -1,0 +1,3 @@
+﻿  Assembling Projectile_Calculator.asm...
+Projectile_Calculator.obj : warning LNK4258: directive '/ENTRY:main@0' not compatible with switch '/ENTRY:main'; ignored
+  Trajectory_Calculator.vcxproj -> E:\AssemblyFuckery\Assembly-Project\Trajectory_Calculator\Debug\Trajectory_Calculator.exe
